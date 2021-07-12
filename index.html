@@ -8,7 +8,7 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <title>Berk Altıok</title>
+    <title>Oğuz Kaan Özsoy</title>
 
     <meta name="description" content="10 yılı aşkın sektörel deneyimimle bir çok projede yer aldım ve yaptım. Remote çalışma düzenim ve profesyonel iş anlayışım ile Front-End geliştiricilik yapmaktayım. Sizin de bir projeniz var ve kaliteli bir Front-End kodlaması istiyorsanız doğru adrestesiniz.">
     <link rel="shortcut icon" href="">
@@ -40,8 +40,9 @@
             <div class="about__content-name">BIO</div>
             <div class="about__content-title">{{ this.config.about.content.title }}</div>
             <div class="about__content-subtitle">{{ this.config.about.content.subtitle }}</div>
-            <!--<div class="about__content-info">{{ this.config.about.content.info }}</div>-->
+            <div class="about__content-info">{{ this.config.about.content.info }}</div>
             <div class="about__content-icons">
+              <button ></button>
               <a :aria-label="item.icon + ' Media'" rel="noopener" target="_blank" v-for="item in this.config.about.social" :href="item.url + '?ref=' + window.location.hostname"><i :class="(item.type || 'fab')+' fa-'+item.icon"></i></a>
               <span></span>
             </div>
